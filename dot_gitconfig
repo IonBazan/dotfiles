@@ -17,3 +17,7 @@
 	defaultBranch = main
 [pull]
 	rebase = false
+[push]
+	default = upstream
+[help]
+	autocorrect = 1
