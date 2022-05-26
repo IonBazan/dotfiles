@@ -1,0 +1,20 @@
+{{- /* The following variables are only available within this file */ -}}
+
+{{- $personalName := promptString "Full name" "Ion Bazan" -}}
+{{- $personalEmail := promptString "Personal email" "ion.bazan@gmail.com" -}}
+{{- $gpg_keyid := promptString "PGP key id" "4329A5BD3E3279333E31953F94950B1619EEC864" -}}
+{{- $github_user := promptString "GitHub username" "IonBazan" -}}
+
+{{- $workName := promptString "Work Full name" "Ion Bazan" -}}
+{{- $workEmail := promptString "Work email" "ion@pomelopay.com" -}}
+{{- $workDir := promptString "Work directory" "pomelopay" -}}
+
+data:
+  personal_name: "{{ $personalName }}"
+  personal_email: "{{ $personalEmail }}"
+  github_user: "{{ $github_user }}"
+  gpg_keyid: "{{ $gpg_keyid }}"
+
+  work_name: "{{ $workName }}"
+  work_email: "{{ $workEmail }}"
+  work_dir: "{{ $workDir }}"

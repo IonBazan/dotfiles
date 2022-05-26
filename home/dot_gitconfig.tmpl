@@ -1,10 +1,10 @@
 [user]
-  name = Ion Bazan
-  email = ion.bazan@gmail.com
-  signingkey = 4329A5BD3E3279333E31953F94950B1619EEC864
+  name = {{ .personal_name }}
+  email = {{ .personal_email }}
+  signingkey = {{ .gpg_keyid }}
 
-[includeIf "gitdir:~/work/pomelopay/"]
-  path = ~/.gitconfig_pomelopay
+[includeIf "gitdir:~/work/{{ .work_dir }}/"]
+  path = ~/.gitconfig_work
 
 [commit]
   gpgsign = true
@@ -14,7 +14,7 @@
 
 [core]
   autocrlf = input
-  excludesfile = /Users/ion/.gitignore
+  excludesfile = ~/.gitignore
 
 [init]
   defaultBranch = main
