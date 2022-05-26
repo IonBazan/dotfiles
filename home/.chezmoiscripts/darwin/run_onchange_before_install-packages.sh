@@ -13,7 +13,6 @@ brew install \
   bat \
   composer \
   curl \
-  dockutil \
   exiftool \
   fontconfig \
   gh \
@@ -31,6 +30,7 @@ brew install \
   ;
 
 brew install --cask \
+  hpedrorodrigues/tools/dockutil \
   qbittorrent \
   robo-3t \
   stats \
