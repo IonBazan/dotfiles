@@ -31,6 +31,7 @@ brew install \
 
 brew install --cask \
   hpedrorodrigues/tools/dockutil \
+  iterm2 \
   qbittorrent \
   robo-3t \
   stats \
