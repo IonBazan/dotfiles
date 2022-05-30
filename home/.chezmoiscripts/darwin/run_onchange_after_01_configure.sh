@@ -6,6 +6,8 @@ fi
 
 set -eufo pipefail
 
+echo '🍏  Configuring Apple settings'
+
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 defaults write NSGlobalDomain AppleLanguages -array en-SG
 defaults write NSGlobalDomain AppleLocale en_SG
@@ -29,6 +31,8 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+echo '💻  Configuring Apple Dock'
 
 for dockItemLabel in \
   Launchpad \
