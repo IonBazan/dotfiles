@@ -38,7 +38,7 @@ brew install \
   wget \
   ;
 
-brew install --cask \
+brew install --cask --no-quarantine \
   hpedrorodrigues/tools/dockutil \
   iterm2 \
   qbittorrent \

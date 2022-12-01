@@ -16,15 +16,17 @@ chezmoi init --apply IonBazan
 
 You will be asked some questions in order to customize your installation. Hit <kbd>Enter</kbd> for default value.
 
+Run `p10k configure` to install missing terminal fonts.
+
 ## Content
 
 It currently configures following:
 
 - Git
 - zsh with plugins and themes
-- Powerlevel10k
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - some Mac OS settings
-- installs brew
+- installs [brew](https://brew.sh/)
 - installs essential brew packages
 
 ### Git settings
