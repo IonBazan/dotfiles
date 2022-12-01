@@ -11,6 +11,9 @@ command -v brew >/dev/null 2>&1 || \
 
 echo '📦  Installing Homebrew packages'
 
+brew tap shivammathur/extensions
+brew tap shivammathur/php
+
 brew install \
   aria2 \
   awscli \
