@@ -39,6 +39,7 @@ brew install \
   ;
 
 brew install --cask --no-quarantine \
+  jetbrains-toolbox \
   hpedrorodrigues/tools/dockutil \
   iterm2 \
   qbittorrent \
