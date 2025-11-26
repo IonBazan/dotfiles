@@ -337,7 +337,14 @@
   # parameter. For example, if POWERLEVEL9K_DIR_WORK_NOT_WRITABLE_FOREGROUND is not set, it falls
   # back to POWERLEVEL9K_DIR_FOREGROUND.
   #
-  # typeset -g POWERLEVEL9K_DIR_CLASSES=()
+  typeset -g POWERLEVEL9K_DIR_WISE_WORK_VISUAL_IDENTIFIER_EXPANSION=$'\uF11D'     # Flag-O
+  typeset -g POWERLEVEL9K_DIR_WISE_WORK_FOREGROUND=2 # Green flag
+  typeset -g POWERLEVEL9K_DIR_PERSONAL_WORK_VISUAL_IDENTIFIER_EXPANSION=$'\uEAAC' # Briefcase
+
+  typeset -g POWERLEVEL9K_DIR_CLASSES=(
+    '~/work/wise' 'WISE_WORK'
+    '~/work'      'PERSONAL_WORK'
+  )
 
   # Custom prefix.
   # typeset -g POWERLEVEL9K_DIR_PREFIX='in '
