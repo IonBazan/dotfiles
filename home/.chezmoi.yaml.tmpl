@@ -2,12 +2,13 @@
 
 {{- $personalName := promptString "Full name" "Ion Bazan" -}}
 {{- $personalEmail := promptString "Personal email" "ion.bazan@gmail.com" -}}
-{{- $gpg_keyid := promptString "PGP key id" "4329A5BD3E3279333E31953F94950B1619EEC864" -}}
+{{- $gpg_keyid := promptString "PGP key ID" "4329A5BD3E3279333E31953F94950B1619EEC864" -}}
 {{- $github_user := promptString "GitHub username" "IonBazan" -}}
 
 {{- $workName := promptString "Work Full name" "Ion Bazan" -}}
-{{- $workEmail := promptString "Work email" "ion.b@aspireapp.com" -}}
-{{- $workDir := promptString "Work directory" "aspire" -}}
+{{- $workEmail := promptString "Work email" "ion.bazan@wise.com" -}}
+{{- $workDir := promptString "Work directory" "wise" -}}
+{{- $work_gpg_keyid := promptString "Work PGP key ID" $gpg_keyid -}}
 
 data:
   personal_name: "{{ $personalName }}"
@@ -18,3 +19,4 @@ data:
   work_name: "{{ $workName }}"
   work_email: "{{ $workEmail }}"
   work_dir: "{{ $workDir }}"
+  work_gpg_keyid: "{{ $work_gpg_keyid }}"

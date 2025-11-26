@@ -14,6 +14,13 @@ If you already have `chezmoi` installed:
 chezmoi init --apply IonBazan
 ```
 
+There are a few `scripts` that set up additional packages and settings.
+While they are quite helpful, you might choose to opt out using:
+
+```shell
+chezmoi init --apply IonBazan -x scripts
+```
+
 You will be asked some questions in order to customize your installation. Hit <kbd>Enter</kbd> for default value.
 
 Run `p10k configure` to install missing terminal fonts.
