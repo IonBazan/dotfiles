@@ -35,5 +35,6 @@ brew install --cask --no-quarantine \
   jetbrains-toolbox \
   hpedrorodrigues/tools/dockutil \
   iterm2 \
+  robo-3t \
   stats \
   ;
