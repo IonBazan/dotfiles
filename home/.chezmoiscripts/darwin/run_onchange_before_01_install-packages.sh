@@ -6,31 +6,26 @@ fi
 
 set -eufo pipefail
 
-command -v brew >/dev/null 2>&1 || \
-  (echo '🍺  Installing Homebrew' && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)")
-
 echo '📦  Installing Homebrew packages'
 
-brew install \
-  aria2 \
-  awscli \
-  bat \
-  chezmoi \
-  curl \
-  exiftool \
-  fontconfig \
-  gh \
-  git \
-  git-delta \
-  gnupg \
-  jq \
-  xz \
-  zsh-syntax-highlighting \
-  wget \
-  ;
+brew bundle install --file=- <<EOF
+brew "aria2"
+brew "awscli"
+brew "bat"
+brew "chezmoi"
+brew "curl"
+brew "dockutil"
+brew "exiftool"
+brew "fontconfig"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "gnupg"
+brew "jq"
+brew "xz"
+brew "zsh-syntax-highlighting"
+brew "wget"
 
-brew install --cask --no-quarantine \
-  hpedrorodrigues/tools/dockutil \
-  iterm2 \
-  stats \
-  ;
+cask "iterm2"
+cask "stats"
+EOF
