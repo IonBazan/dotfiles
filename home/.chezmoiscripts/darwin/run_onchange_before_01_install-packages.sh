@@ -23,18 +23,14 @@ brew install \
   git \
   git-delta \
   gnupg \
-  httpie \
   jq \
-  node \
   xz \
   zsh-syntax-highlighting \
   wget \
   ;
 
 brew install --cask --no-quarantine \
-  jetbrains-toolbox \
   hpedrorodrigues/tools/dockutil \
   iterm2 \
-  robo-3t \
   stats \
   ;
