@@ -342,8 +342,8 @@
   typeset -g POWERLEVEL9K_DIR_PERSONAL_WORK_VISUAL_IDENTIFIER_EXPANSION=$'\uEAAC' # Briefcase
 
   typeset -g POWERLEVEL9K_DIR_CLASSES=(
-    '~/work/wise' 'WISE_WORK'
-    '~/work'      'PERSONAL_WORK'
+    '~/work/wise**' 'WISE_WORK'
+    '~/work**'      'PERSONAL_WORK'
   )
 
   # Custom prefix.
