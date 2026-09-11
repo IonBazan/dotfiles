@@ -6,6 +6,8 @@ fi
 
 set -eufo pipefail
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 echo '📦  Installing Homebrew packages'
 
 brew bundle install --file=- <<EOF

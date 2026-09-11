@@ -35,6 +35,11 @@ It currently configures following:
 - some Mac OS settings
 - installs [brew](https://brew.sh/)
 - installs essential brew packages
+- SSH client config (`~/.ssh/config`)
+- Vim (`~/.vimrc`)
+- Global instructions for AI coding agents (Claude Code, Codex, Gemini)
+
+Currently macOS only.
 
 ### Git settings
 
@@ -45,3 +50,9 @@ uses personal email by default
 - `~/.gitconfig_work` - only applied for git repositories located in `~/work/$work_dir/` directory - uses work email
 instead of the personal one
 - `~/.gitignore` - global git ignore file - applies to all repositories and includes system and IDE files
+
+### AI agent settings
+
+`~/.agents/AGENTS.md` holds global instructions for coding agents (code style, git, and writing conventions).
+`~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`, and `~/.gemini/GEMINI.md` are symlinked to it, so all three tools
+share the same instructions.

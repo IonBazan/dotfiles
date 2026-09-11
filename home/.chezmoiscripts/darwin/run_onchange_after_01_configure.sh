@@ -6,6 +6,8 @@ fi
 
 set -eufo pipefail
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 echo '🍏  Configuring Apple settings'
 
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
