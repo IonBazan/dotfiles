@@ -37,7 +37,7 @@ It currently configures following:
 - installs essential brew packages
 - SSH client config (`~/.ssh/config`)
 - Vim (`~/.vimrc`)
-- Global instructions for AI coding agents (Claude Code, Codex, Gemini)
+- Global instructions for AI coding agents (Claude Code, Codex, Gemini) - see [AGENTS.md](home/dot_agents/AGENTS.md)
 
 Currently macOS only.
 
@@ -53,6 +53,10 @@ instead of the personal one
 
 ### AI agent settings
 
-`~/.agents/AGENTS.md` holds global instructions for coding agents (code style, git, and writing conventions).
+[`home/dot_agents/AGENTS.md`](home/dot_agents/AGENTS.md) is deployed to `~/.agents/AGENTS.md` and holds global
+instructions for coding agents (code style, git, and writing conventions).
 `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`, and `~/.gemini/GEMINI.md` are symlinked to it, so all three tools
 share the same instructions.
+
+The [`AGENTS.md`](AGENTS.md) at the repo root is separate: it only describes this repo for agents working
+on it directly, and lives outside the `home/` source root, so it is never deployed or synced to any machine.
