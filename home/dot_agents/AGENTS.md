@@ -14,7 +14,8 @@ Global instructions for coding agents. Project-level files override anything her
 
 ## Git
 
-- Use lowercase for short phrases and sentence case for full sentences. Preserve standard casing for acronyms, proper names, and identifiers in both. Use a body only when asked or when the change genuinely needs context.
+- Single-line commit messages only, unless requested otherwise.
+- Use lowercase for short phrases and sentence case for full sentences. Preserve standard casing for acronyms, proper names, and identifiers in both. Use a body only when asked.
 - Keep a commit body short: a sentence or two, not a list of every file changed or a repeat of the diff.
 - Keep commits small: one change per commit. Split unrelated changes into separate commits.
 - Don't add AI attribution: no `Co-Authored-By` for an agent, no "Generated with", no tool names or emoji in messages.
