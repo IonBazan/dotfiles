@@ -14,8 +14,11 @@ Global instructions for coding agents. Project-level files override anything her
 
 ## Git
 
-- Single-line commit messages only, unless requested otherwise.
+- Single-line commit messages only, unless requested otherwise. Keep them within 72 characters.
 - Use lowercase for short phrases and sentence case for full sentences. Preserve standard casing for acronyms, proper names, and identifiers in both. Use a body only when asked.
+- When working in a fork, `upstream` is the original repository and `origin` is my fork. Push to `origin`, open PRs against `upstream`. When using `gh`, pass `--repo` (or let `gh` infer from `origin`) rather than assuming `upstream` is the default remote.
+- When creating a fork with `gh repo fork`, confirm afterwards (`git remote -v`) that `origin` points to the fork and `upstream` to the original; rename remotes to match if `gh` set them up differently.
+- Git is configured with `push.default = upstream` and `push.autoSetupRemote = true`, so a plain `git push` pushes the current branch to its tracking branch (defaulting to `origin` and auto-creating that tracking branch if none exists yet). In a fork, that means plain `git push` is normally safe and lands on `origin`. But check what the current branch actually tracks (`git status` or `git branch -vv`) before pushing if it might track `upstream` instead, e.g. after `git branch --set-upstream-to=upstream/<branch>` or `gh pr checkout` on someone else's PR: pushing there would push straight to the original repository.
 - Keep a commit body short: a sentence or two, not a list of every file changed or a repeat of the diff.
 - Keep commits small: one change per commit. Split unrelated changes into separate commits.
 - Don't add AI attribution: no `Co-Authored-By` for an agent, no "Generated with", no tool names or emoji in messages.
